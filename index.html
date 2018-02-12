@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8"/>
+    <link rel = "stylesheet" href = "cssReset.css" type = "text/css">
+    <link rel = "stylesheet" href = "style.css" type = "text/css">
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>두근두근 문예부! - 나츠키</title>
+</head>
+<body>
+<section>
+    <div id = "Intro">
+      <div id = "introText">
+        <p id = "introTitle">"두근두근 문예부! - 나츠키"</p>
+        <p id = "introSub"><br/>&nbsp;&nbsp;&nbsp;Made by Concertino in Blue<br/>&nbsp;&nbsp;&nbsp;겟앰프드 스킨메이커 르트르브</p>
+      </div>
+    </div>
+    <div id = "ext">
+      <h1>문예부에 온 걸 환영해!</h1><br/>
+      <p>난 내가 사랑하는 것들로 뭔가 특별한 걸 하는 게 꿈이었어</p>
+      <p id = "changeZero">넌 부원으로서, 내 꿈이 이 귀여운 게임에서 현실이 되도록 도와주는 게 네 일이야!</p>
+      <p>귀엽고 사랑스러운 내 부원들과 매일 수다를 떨고, 재미있는 부활동만 하면 돼.</p><br/>
+      <p id = "changeOne">행복을 가장 중요시하는 햇살 꾸러미, <strong>사요리!</strong></p>
+      <p id = "changeTwo">자신감과 매력이 넘치는 귀여운 소녀, <strong>나츠키!</strong></p>
+      <p id = "changeThree">책을 벗삼는 소심하고 신비한 소녀,  <strong>유리! </strong></p>
+      <p id = "changeFour">그리고 부장인 나, <strong>모니카</strong>가 있어!</p><br/>
+      <p>난 네가 이 부원들과 친구가 되는 것과 문예부를 모두에게 즐거운 곳이 되도록 도와줄 걸 생각하니 너무 기대 돼!</p><br/>
+      <p>있지, 너는 한 눈에 봐도 상냥한 사람 같은데, 나랑 많은 시간을 보내겠다고 약속 해줄래? ♥</p><br/>
+      <input type = "button" id = "btn" value = "약속하기"/>
+    </div>
+    <div id = "preFoot">
+      <h1>안내사항</h1><br/>
+      <ul id = "ps">
+      <li>본 페이지는 스킨 홍보 이외의 목적으로 사용되지 않습니다.</li><br/>
+      <li>본 페이지는 PC화면에 최적화 된 페이지입니다.</li><br/>
+      <li><strong>본 페이지에서 사용된 연출은 PC에 영향을 끼치지 않습니다.</strong></li><br/>
+    </div>
+</section>
+<script>
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function(){
+  window.open("ddlcskin1.html", "Open Your Eyes", "width=300, height=300, resizable=no");
+  btn.parentNode.removeChild(btn);
+  var ext = document.getElementById("ext");
+  var changeZero = document.getElementById("changeZero");
+  var changeOne = document.getElementById("changeOne");
+  changeOne.parentNode.removeChild(changeOne);
+  var changeThree = document.getElementById("changeThree");
+  changeThree.parentNode.removeChild(changeThree);
+  var changeFour = document.getElementById("changeFour");
+  changeFour.parentNode.removeChild(changeFour);
+  ext.innerHTML += "<br/>";
+  ext.innerHTML += "<br/>";
+  ext.innerHTML += "<br/>";
+  ext.innerHTML += "<h1>OnlyNatsukiOnlyNatsukiOnlyNatsuki......</h1>";
+
+  var preFoot = document.getElementById("preFoot");
+  var imgOne = document.createElement("img");
+  imgOne.setAttribute("src", "img/natsuki.png");
+  preFoot.appendChild(imgOne);
+  preFoot.innerHTML += "<br/>";
+  var imgTwo = document.createElement("img");
+  imgTwo.setAttribute("src", "img/detail.png");
+  preFoot.appendChild(imgTwo);
+});
+</script>
+</body>
+</html>
